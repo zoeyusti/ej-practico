@@ -1,8 +1,60 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	background-image:url('/images/fondo.jpg');
+	text-align: center;
 }
 
-a {
-  color: #00B7FF;
+
+ul{
+	background-color: white;
+	border-bottom: solid;
+	border-width: thick;
+	border-color: #F2F4F4;
+}
+
+li{
+	list-style: none;
+	display: inline-block;
+	margin: 1% 5%;
+	
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+
+a:hover{
+	font-weight: bold;
+}
+
+
+#pingMsg{
+	display: none;
+	width: 100px;
+	margin-left: 38%;
+	background-color: red;
+	color: white;
+	font-weight: bold;
+	padding: 10px;
+	border-radius: 5px;
+	position: absolute;
+	z-index: 1;
+}
+
+
+.contenedor{
+	width: 90%;
+	text-align: center;
+	background-color: #FBFCFC;
+	margin: 4% 5%;
+	padding: 10% 0;
+	box-shadow: 5px 10px #ABB2B9;
+}
+
+.contenedor h1, h2, h4{
+	margin: 2% 0;
 }

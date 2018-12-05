@@ -1,9 +1,10 @@
 extends layout
 
 block content
-	form(action='/user' method='POST')
-		input(type='text' name='nombre' placeholder='Nombre')
-		input(type='text' name='apellido' placeholder='Apellido')
-		input(type='number' name='telefono' placeholder='Teléfono')
-		input(type='email' name='email' placeholder='Email')
-		input(type='submit')
+	.contenedor
+		form(action='/user' method='POST')
+			input(type='text' name='nombre' placeholder='Nombre')
+			input(type='text' name='apellido' placeholder='Apellido')
+			input(type='number' name='telefono' placeholder='Teléfono')
+			input(type='email' name='email' placeholder='Email')
+			input(type='submit')
