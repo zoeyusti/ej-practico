@@ -1,0 +1,3 @@
+{"nombre":"Lala","apellido":"lala","telefono":"123","email":"lala@lala.com"}
+{"nombre":"lala","apellido":"Lala","telefono":"123","email":"lala@lala.com"}
+{"nombre":"Hello","apellido":"Itsa","telefono":"000","email":"me@gmail.com"}

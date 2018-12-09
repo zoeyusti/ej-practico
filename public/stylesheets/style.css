@@ -50,11 +50,75 @@ a:hover{
 	width: 90%;
 	text-align: center;
 	background-color: #FBFCFC;
-	margin: 4% 5%;
-	padding: 10% 0;
+	margin: 4% auto 0;
+	padding: 4% 0 5%;
 	box-shadow: 5px 10px #ABB2B9;
 }
 
 .contenedor h1, h2, h4{
-	margin: 2% 0;
+	margin: 2% auto;
 }
+
+
+::-webkit-input-placeholder{
+	text-align: center;
+}
+
+
+/*FORM*/
+
+#agregarForm{
+	display: flex;
+	flex-direction: column;
+}
+
+.casilla{
+	width: 50%;
+	margin: 0 auto 0.7%; 
+	padding: 10px 0;
+}
+
+.boton{
+	width: 20%;
+	padding: 3px;
+	background-color: yellow;
+	border-color: lightyellow;
+	border-radius: 5px;
+	margin: 1% auto 0;
+}
+
+
+/*Para el error, donde está la única imagen que tenemos*/
+.errorImg{
+	max-width: 50%;
+}
+
+/*Para el error del jquery validator*/
+
+.error{
+	color: red;
+}
+
+.valid{
+	color: green;
+}
+
+
+#verLista{
+	background-color: #EBDEF0;
+	text-align: center;
+	margin: 1% auto;
+	width: 75%;
+	border-collapse: collapse;
+}
+
+td, th{
+	border-style: solid;
+	border-color: white;
+	border-width: thin;
+	height: 30px;
+}
+th{
+	border-bottom-color: black;
+}
+

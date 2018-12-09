@@ -2,3 +2,17 @@ extends layout
 
 block content
 	.contenedor
+		input#busqueda.casilla(type='text' placeholder='Buscar...')
+		table#verLista
+			tr
+				th Nombre
+				th Apellido
+				th Teléfono
+				th Email
+			each usuario in usuarios
+
+				tr.aBuscar
+					td #{usuario.nombre}
+					td #{usuario.apellido}
+					td #{usuario.telefono}
+					td #{usuario.email}

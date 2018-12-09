@@ -1,6 +1,8 @@
 extends layout
 
 block content
-  h1= message
-  h2= error.status
-  pre #{error.stack}
+  h1 ¡Oh no!
+  h2= message
+  h3 Lamentamos el inconveniente, nuestros desarrolladores están trabajando para poder resolverlo
+
+  img.errorImg(src="/images/error.jpg")
