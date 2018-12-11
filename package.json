@@ -3,7 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "test": "ava",
+    "doc": "./node_modules/.bin/jsdoc -c jsdoc.conf -r readme.md -d ./docs"
   },
   "dependencies": {
     "cookie-parser": "~1.4.3",
@@ -14,5 +16,9 @@
     "jquery-validation": "^1.19.0",
     "morgan": "~1.9.0",
     "pug": "2.0.0-beta11"
+  },
+  "devDependencies": {
+    "ava": "^0.25.0",
+    "jsdoc": "^3.5.5"
   }
 }

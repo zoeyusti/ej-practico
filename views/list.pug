@@ -9,10 +9,14 @@ block content
 				th Apellido
 				th Teléfono
 				th Email
+				th
 			each usuario in usuarios
 
-				tr.aBuscar
+				tr(id=usuario.id).aBuscar
 					td #{usuario.nombre}
 					td #{usuario.apellido}
 					td #{usuario.telefono}
 					td #{usuario.email}
+					td
+						button(style='font-size:20px')
+							i.fas.fa-trash-alt.eliminar(data-id=usuario.id)

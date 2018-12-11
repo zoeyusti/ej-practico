@@ -1,3 +1,9 @@
+/** 
+* @file Ruta "/ping" que devuelve "Pong"
+* @requires Express
+* @module Ping
+*/
+
 var express = require('express');
 var router = express.Router();
 

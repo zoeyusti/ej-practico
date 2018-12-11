@@ -1,7 +1,22 @@
+/** 
+* @file Distintas funciones que trabajan del lado del cliente
+*/
+
+
+/** 
+* @function Muestra mensaje al hacer hover sobre el link de ping
+*/
+
 $("#pingLink").hover (function () {
     $("#pingMsg").toggle();
 });
 
+
+
+/** 
+* @function Verifica que los datos ingresados sean válidos
+* {@link https://jqueryvalidation.org/documentation/ documentación del plugin utilizado}
+*/
 
 //var mailRe = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
@@ -9,7 +24,7 @@ jQuery.validator.addMethod("validarMail", function(value, element) {
   return this.optional( element ) || /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test( value );
 }, 'Ingrese un correo electrónico válido');
 
-//https://jqueryvalidation.org/documentation/
+
 $(function(){
 	$('#agregarForm').validate({
 		rules: {
@@ -60,15 +75,15 @@ $(function(){
 		},
 
 		submitHandler: function(form) {
-    		// do other things for a valid form
-	    	//if ($('form').valid()) {
-	    	//console.log('Validamos del lado del cliente!');
-	    	form.submit();
-	    	//}
+    		form.submit();
   		}
 	});
 });
 
+/** 
+* @function Filtra los usuarios según la búsqueda tipeada
+* @param {string} value
+*/
 
 $(function(){
   $("#busqueda").on("keyup", function() {
@@ -77,4 +92,16 @@ $(function(){
       $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
     });
   });
+});
+
+/** 
+* @function Borra un usuario de la lista del lado cliente
+* @param {string} dataId
+*/
+
+$(function(){
+	$(".eliminar").on('click',function(){
+		var dataId = $(this).data('id');
+		$("#"+dataId).remove();
+	});
 });
