@@ -19,7 +19,7 @@ Adicionales no mandatorios
 - Se valorará contar con acciones en la tabla, como por ejemplo poder eliminar al usuario o editarlo.
 
 
-        npm run doc
-        npm test (es posible que se necesite el sudo)
+        $ npm run doc
+        $ npm test (es posible que se necesite el sudo)
 
 

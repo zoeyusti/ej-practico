@@ -93,15 +93,3 @@ $(function(){
     });
   });
 });
-
-/** 
-* @function Borra un usuario de la lista del lado cliente
-* @param {string} dataId
-*/
-
-$(function(){
-	$(".eliminar").on('click',function(){
-		var dataId = $(this).data('id');
-		$("#"+dataId).remove();
-	});
-});

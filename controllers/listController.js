@@ -11,9 +11,11 @@ const self = {};
 
 /** 
 * @function Agrega id al usuario registrado, se agrega al archivo de texto, y en caso de estar todo correcto se redirige a la vista de la lista. Sino carga la vista de error
+* 
 * @param {object} req
 * @param {object} res
 * @param {function} next
+* 
 * @type {string} nombre
 * @type {string} apellido
 * @type {string} id

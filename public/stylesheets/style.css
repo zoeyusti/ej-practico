@@ -125,3 +125,20 @@ th{
 .fas:hover{
 	color: red;
 }
+
+
+@media (max-width: 480px){
+	.contenedor{
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		box-shadow: none;
+		
+		
+	}
+	#verLista{
+		width: 100%;
+		overflow-x: auto;
+	}
+
+}
